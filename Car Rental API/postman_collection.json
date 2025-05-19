@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "6e3db68f-c693-49c3-9d5b-50dcc41828ce",
+		"name": "api_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Main Categories API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_password",
+							"value": "GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee",
+							"type": "default"
+						},
+						{
+							"key": "lang",
+							"value": "en",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/get-main-categories",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"get-main-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category ById API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\",\r\n    \"id\" : \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/get-category-ById",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"get-category-ById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Category Status API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\",\r\n    \"id\" : \"10\",\r\n    \"active\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/get-category-ById",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"get-category-ById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\",\r\n    \"email\" : \"akram@gmail.com\",\r\n    \"password\" : \"1123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/admin/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\",\r\n    \"email\" : \"rami@gmail.com\",\r\n    \"password\" : \"1112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Logout API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaV90ZXN0L3B1YmxpYy9hcGkvYWRtaW4vbG9naW4iLCJpYXQiOjE2NzQ4NDAwMjYsImV4cCI6MTY3NDg0MzYyNiwibmJmIjoxNjc0ODQwMDI2LCJqdGkiOiJjYXlwU3VuWXJGVExZQ1RLIiwic3ViIjoiMSIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkifQ.tofD3zcwWTm6O459thf3bvS8PReL_JQurN2gMum13ug",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/admin/logout",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"admin",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Logout API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaV90ZXN0L3B1YmxpYy9hcGkvYWRtaW4vbG9naW4iLCJpYXQiOjE2NzQ4NDAwMjYsImV4cCI6MTY3NDg0MzYyNiwibmJmIjoxNjc0ODQwMDI2LCJqdGkiOiJjYXlwU3VuWXJGVExZQ1RLIiwic3ViIjoiMSIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkifQ.tofD3zcwWTm6O459thf3bvS8PReL_JQurN2gMum13ug",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/user/logout",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Profile API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaV90ZXN0L3B1YmxpYy9hcGkvYWRtaW4vbG9naW4iLCJpYXQiOjE2NzQ4NDAxNjIsImV4cCI6MTY3NDg0Mzc2MiwibmJmIjoxNjc0ODQwMTYyLCJqdGkiOiJBQzM4Sjk0cW5sanhnaGFDIiwic3ViIjoiMSIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkifQ.vFezO-mgfHSU52m55gdEapVYUFE_26SFoYXZxpczHCs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/user/profile",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Profile API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaV90ZXN0L3B1YmxpYy9hcGkvdXNlci9sb2dpbiIsImlhdCI6MTY3NDg0MDE3MCwiZXhwIjoxNjc0ODQzNzcwLCJuYmYiOjE2NzQ4NDAxNzAsImp0aSI6IlNoWUVzcUxWQlR5bjlIdEgiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.thVp_qxDnGKgPMtxL51VK6pgh8Zmx-DKWelcCKoyiCo",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_password\" : \"GXlzK3qNmdGlYoqZ9mR4SQKpLDimGee\",\r\n    \"lang\" : \"en\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api_test/public/api/admin-profile",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_test",
+						"public",
+						"api",
+						"admin-profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
